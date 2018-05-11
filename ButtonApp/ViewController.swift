@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var numberView: UILabel!
+    
+    var player: AVAudioPlayer!
     
     var score = 0
     
