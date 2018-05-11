@@ -32,23 +32,20 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4W6-r7-yf1">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="233.66666666666666"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypA-gM-9tD">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="233.66666666666666"/>
-                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOx-Zg-MOv">
-                                                <rect key="frame" x="138" y="0.0" width="138" height="233.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="233.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="100"/>
                                                 <color key="textColor" red="0.31372549019607843" green="0.78431372549019607" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UU8-YE-PM2">
-                                                <rect key="frame" x="276" y="0.0" width="138" height="233.66666666666666"/>
-                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueP-WD-wwK">
                                         <rect key="frame" x="0.0" y="233.66666666666669" width="414" height="233.66666666666669"/>
                                         <state key="normal" image="gemstone"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URS-0j-CeQ"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LdW-9v-Tz9">
                                         <rect key="frame" x="0.0" y="467.33333333333331" width="414" height="233.66666666666669"/>
@@ -74,6 +71,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="numberView" destination="iOx-Zg-MOv" id="Yf7-05-sjc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
